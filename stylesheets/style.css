@@ -1,4 +1,18 @@
 /* common */
+
+body {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #0044cc;
+}
+a:hover {
+  opacity: .4;
+  transition: opacity .4s;
+}
+
 .unit {
   margin-bottom: 80px;
 }
@@ -15,13 +29,15 @@
   left: 0;
   transform: translateY(-50%);
   width: 5px;
-  height: 40px;
+  height: 48px;
   background-color: #33ccff;
 }
 
 .demo {
-  background-color: #ddd;
-  height:250px;
+  background-color: #eee;
+  height:auto;
+  border: 1px solid rgba(0,0,0,.5);
+  border-radius: 5px;
 }
 
 .desc {
@@ -39,13 +55,21 @@
 
 
 
+
+
 /* style */
+
+.position {
+  height:220px;
+}
 
 .box1 {
   background-color: #00a6c6;
   width:300px;
   height:100px;
   position:relative;
+  top:5px;
+  left:5px;
 }
 .innerbox {
   width:200px;
