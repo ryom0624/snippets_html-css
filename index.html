@@ -1,135 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./stylesheets/style.css">
   <title>my html&css</title>
 </head>
+
 <body>
 
+  <div class="main">
 
-  <!-- position  -->
-  <div class="unit">
-    <h2 class="title">position element</h2>
-    <div class="ref_url">
-      <a href="https://uxmilk.jp/63409">CSSのposition:「absolute」と「relative」とは</a>
-      <p>Ref : UX MILK</p>
-    </div>
-    <div class="demo position">
-      <div class="box1">box1(relative)
-        <div class="innerbox">inner(absolute)</div>
+    <header>
+      <div class="logo">
+        <a href="#">MyHTML</a>
       </div>
-      <div class="box2">box2(absolute)</div>
-      <div class="box3">box3(relative)</div>
-    </div>
-    <div class="desc">
-      <p>
-        <span class="elem">position要素</span><br>
-        relative:自分の本来の場所から指定して移動<br>
-        absolute:windowの左上から絶対指定で移動<br>
-        ※親要素がrelativeかかっていると、子要素にabsoluteしても親要素からの移動になる。
-      </p>
-    </div>
+      <nav class="g-nav">
+        <ul>
+          <li><a href="">ナビ1</a></li>
+          <li><a href="">ナビ2</a></li>
+          <li><a href="">ナビ3</a></li>
+          <li><a href="">ナビ4</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h3>Code</h3>
-    <div class="code">
-      <pre>
-        <code>
-          &lt;ul class=&quot;sample&quot;&gt;
-              &lt;li&gt;リスト1&lt;/li&gt;
-              &lt;li&gt;リスト2&lt;/li&gt;
-              &lt;li&gt;リスト3&lt;/li&gt;
-              &lt;li&gt;リスト4&lt;/li&gt;
-          &lt;/ul&gt;
-        </code>
-      </pre>
-    </div>
+    <div class="container">
+      <!-- position  -->
+      <div class="unit">
+        <h2 class="title">position element</h2>
+        <div class="ref_url">
+          <a href="https://uxmilk.jp/63409">CSSのposition:「absolute」と「relative」とは</a>
+          <p>Ref : UX MILK</p>
+        </div>
+        <div class="demo position">
+          <div class="box1">box1(relative)
+            <div class="innerbox">inner(absolute)</div>
+          </div>
+          <div class="box2">box2(absolute/t:250,l:640)</div>
+          <div class="box3">box3(relative)</div>
+        </div>
+        <div class="desc">
+          <p>
+            <span class="elem">position要素</span><br> relative:自分の本来の場所から指定して移動
+            <br> absolute:windowの左上から絶対指定で移動
+            <br> ※親要素がrelativeかかっていると、子要素にabsoluteしても親要素からの移動になる。
+          </p>
+        </div>
+
+        <h3>Code</h3>
+        <div class="code">
+          <pre>
+            <code>
+              &lt;ul class=&quot;sample&quot;&gt;
+                  &lt;li&gt;リスト1&lt;/li&gt;
+                  &lt;li&gt;リスト2&lt;/li&gt;
+                  &lt;li&gt;リスト3&lt;/li&gt;
+                  &lt;li&gt;リスト4&lt;/li&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- #position  -->
+
+
+      <!-- difinition list -->
+      <div class="unit">
+        <h2 class="title">Difinition List</h2>
+        <div class="ref_url">
+          <a href="http://www.htmq.com/html/dl.shtml">DL : HTMLクイック・リファレンス</a>
+          <p>Ref : HTML クイックリファレス</p>
+        </div>
+        <div class="demo">
+          <dl>
+            <dt>&lt;dl&gt;&lt;/dl&gt;タグ</dt>
+            <dd>Difinition Listの略</dd>
+            <dt>&lt;dt&gt;&lt;/dt&gt;タグ</dt>
+            <dd>定義する用語</dd>
+            <dt>&lt;dt&gt;&lt;/dt&gt;タグ</dt>
+            <dd>その説明</dd>
+          </dl>
+        </div>
+        <div class="desc">
+          <p>
+            <span class="elem">dl/dt/ddタグ</span><br> &lt;dl&gt;はDefinition Listの略&lt;dl&gt;&lt;/dl&gt;の範囲が定義リストであることを表します。<br> &lt;dt&gt;&lt;/dt&gt;に定義用語、
+            <br> &lt;dd&gt;&lt;/dd&gt;に説明を記述。
+            <br> &lt;dl&gt;&lt;/dl&gt;の中に複数並べることができる。
+            <br>
+          </p>
+        </div>
+
+        <h3>Code</h3>
+        <div class="code">
+          <pre>
+              <code>
+                &lt;ul class=&quot;sample&quot;&gt;
+                    &lt;li&gt;リスト1&lt;/li&gt;
+                    &lt;li&gt;リスト2&lt;/li&gt;
+                    &lt;li&gt;リスト3&lt;/li&gt;
+                    &lt;li&gt;リスト4&lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+            </pre>
+        </div>
+      </div>
+      <!-- #difinition list -->
+
+      <!-- table cell -->
+
+
+      <!-- #table cell -->
+
+
+
+      <!-- float -->
+      <div class="unit">
+        <h2 class="title">float</h2>
+        <div class="ref_url">
+          <a href="http://taneppa.net/float/">CSSの【float】についてちょっと本気出して説明してみた。</a>
+          <p>Ref : たねっぱ</p>
+        </div>
+        <h4>[パターン1]box3にclearを指定していない場合</h4>
+        <div class="demo float float_num1">
+          <div class="box1">box1</div>
+          <div class="box2">box2</div>
+          <div class="box3">box3</div>
+        </div>
+
+        <h4>[パターン2]box3にclearを指定していない場合</h4>
+        <div class="demo float float_num2">
+          <div class="box1">box1</div>
+          <div class="box2">box2</div>
+          <div class="box3">box3</div>
+        </div>
+        <div class="desc">
+          <p>
+            <span class="elem">float</span><br> floatを指定する際、指定されたboxは宙に浮いているような状態になるので、
+            <br> box3がbox1の中に入り込んでしまっている。box3の方が少し長いのではみ出している。
+            <br> 一方box3にclear:bothを指定しているパターン2の方は、box2のfloatも解除しているので、
+            <br> box2より下に配置ができる。
+          </p>
+        </div>
+
+        <h3>Code</h3>
+        <div class="code">
+          <pre>
+            <code>
+              &lt;ul class=&quot;sample&quot;&gt;
+                  &lt;li&gt;リスト1&lt;/li&gt;
+                  &lt;li&gt;リスト2&lt;/li&gt;
+                  &lt;li&gt;リスト3&lt;/li&gt;
+                  &lt;li&gt;リスト4&lt;/li&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- #float -->
+
+
+      <!-- flex-->
+      <div class="unit">
+        <h2 class="title">flex</h2>
+        <div class="ref_url">
+          <a href="https://www.webcreatorbox.com/tech/flexbox">これからのCSSレイアウトはFlexboxで決まり！</a>
+          <p>Ref : webcreatorbox</p>
+        </div>
+        <h4>均等配置</h4>
+        <div class="demo flexbox">
+          <ul class="flexbox_nav flexbox_num1">
+            <li><a href="#" class="flexbox_logo">Logo</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+          </ul>
+        </div>
+        <h4>ロゴを左端に、残りは右側に。</h4>
+        <div class="demo flexbox">
+          <ul class="flexbox_nav flexbox_num2">
+            <li><a href="#" class="flexbox_logo">Logo</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+          </ul>
+        </div>
+        <h4>途中で折り返す。(flex-wrap:wrap;)</h4>
+        <div class="demo flexbox">
+          <ul class="flexbox_nav flexbox_num3">
+            <li><a href="#">box 1</a></li>
+            <li><a href="#">box 2</a></li>
+            <li><a href="#">box 3</a></li>
+            <li><a href="#">box 4</a></li>
+            <li><a href="#">box 5</a></li>
+            <li><a href="#">box 6</a></li>
+            <li><a href="#">box 7</a></li>
+            <li><a href="#">box 8</a></li>
+            <li><a href="#">box 9</a></li>
+            <li><a href="#">box 10</a></li>
+            <li><a href="#">box 11</a></li>
+          </ul>
+        </div>
+        <h4>途中で折り返す。(3個で折り返したい)</h4>
+        <div class="demo flexbox">
+          <ul class="flexbox_nav flexbox_num4">
+            <li><a href="#">box 1</a></li>
+            <li><a href="#">box 2</a></li>
+            <li><a href="#">box 3</a></li>
+            <li><a href="#">box 4</a></li>
+            <li><a href="#">box 5</a></li>
+            <li><a href="#">box 6</a></li>
+            <li><a href="#">box 7</a></li>
+            <li><a href="#">box 8</a></li>
+            <li><a href="#">box 9</a></li>
+            <li><a href="#">box 10</a></li>
+            <li><a href="#">box 11</a></li>
+          </ul>
+        </div>
+
+        <div class="desc">
+          <p>
+            <span class="elem">element</span><br>
+          </p>
+        </div>
+
+        <h3>Code</h3>
+        <div class="code">
+          <pre>
+              <code>
+                &lt;ul class=&quot;sample&quot;&gt;
+                    &lt;li&gt;リスト1&lt;/li&gt;
+                    &lt;li&gt;リスト2&lt;/li&gt;
+                    &lt;li&gt;リスト3&lt;/li&gt;
+                    &lt;li&gt;リスト4&lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+            </pre>
+        </div>
+      </div>
+      <!-- #template -->
+
+      <!-- template -->
+      <div class="unit">
+        <h2 class="title">title</h2>
+        <div class="ref_url">
+          <a href=""></a>
+          <p>Ref : title</p>
+        </div>
+
+        <div class="demo class class ">
+          <div class="box1">box1</div>
+          <div class="box2">box2</div>
+          <div class="box3">box3</div>
+        </div>
+        <div class="desc">
+          <p>
+            <span class="elem">element</span><br>
+          </p>
+        </div>
+
+        <h3>Code</h3>
+        <div class="code">
+          <pre>
+              <code>
+                &lt;ul class=&quot;sample&quot;&gt;
+                    &lt;li&gt;リスト1&lt;/li&gt;
+                    &lt;li&gt;リスト2&lt;/li&gt;
+                    &lt;li&gt;リスト3&lt;/li&gt;
+                    &lt;li&gt;リスト4&lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+            </pre>
+        </div>
+      </div>
+      <!-- #template -->
+
   </div>
-  <!-- #position  -->
-
-
-  <!-- difinition list -->
-    <div class="unit">
-      <h2 class="title">Difinition List</h2>
-      <div class="ref_url">
-        <a href="http://www.htmq.com/html/dl.shtml">DL : HTMLクイック・リファレンス</a>
-        <p>Ref : HTML クイックリファレス</p>
-      </div>
-      <div class="demo">
-        <dl>
-          <dt>&lt;dl&gt;&lt;/dl&gt;タグ</dt>
-          <dd>Difinition Listの略</dd>
-          <dt>&lt;dt&gt;&lt;/dt&gt;タグ</dt>
-          <dd>定義する用語</dd>
-          <dt>&lt;dt&gt;&lt;/dt&gt;タグ</dt>
-          <dd>その説明</dd>
-        </dl>
-      </div>
-      <div class="desc">
-        <p>
-          <span class="elem">dl/dt/ddタグ</span><br>
-          &lt;dl&gt;はDefinition Listの略&lt;dl&gt;&lt;/dl&gt;の範囲が定義リストであることを表します。<br>
-        	&lt;dt&gt;&lt;/dt&gt;に定義用語、<br>
-        	&lt;dd&gt;&lt;/dd&gt;に説明を記述。<br>
-        	&lt;dl&gt;&lt;/dl&gt;の中に複数並べることができる。<br>
-        </p>
-      </div>
-
-      <h3>Code</h3>
-      <div class="code">
-        <pre>
-          <code>
-            &lt;ul class=&quot;sample&quot;&gt;
-                &lt;li&gt;リスト1&lt;/li&gt;
-                &lt;li&gt;リスト2&lt;/li&gt;
-                &lt;li&gt;リスト3&lt;/li&gt;
-                &lt;li&gt;リスト4&lt;/li&gt;
-            &lt;/ul&gt;
-          </code>
-        </pre>
-      </div>
-    </div>
-  <!-- #template -->
-
-
-
-
-
-<!-- template -->
-  <div class="unit">
-    <h2 class="title">タイトル</h2>
-    <div class="ref_url">
-      <a href="#">link title</a>
-      <p>Ref : site name</p>
-    </div>
-    <div class="demo">
-      結果
-    </div>
-    <div class="desc">
-      <p>
-        <span class="elem">要素名</span><br>
-        説明
-      </p>
-    </div>
-
-    <h3>Code</h3>
-    <div class="code">
-      <pre>
-        <code>
-          &lt;ul class=&quot;sample&quot;&gt;
-              &lt;li&gt;リスト1&lt;/li&gt;
-              &lt;li&gt;リスト2&lt;/li&gt;
-              &lt;li&gt;リスト3&lt;/li&gt;
-              &lt;li&gt;リスト4&lt;/li&gt;
-          &lt;/ul&gt;
-        </code>
-      </pre>
-    </div>
-  </div>
-<!-- #template -->
 
 
 </body>
+
 </html>
